@@ -1,0 +1,49 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "terminal.integrated.profiles.windows": {
+            "PowerShell (Activate Virtual Env)": {
+                "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "args": [
+                    "-NoExit",
+                    "-ExecutionPolicy",
+                    "Bypass",
+                    "-File",
+                    "${workspaceFolder}\\activate_project.ps1"
+                ]
+            },
+            "Command Prompt (Activate Virtual Env)": {
+                "path": "C:\\Windows\\System32\\cmd.exe",
+                "args": [
+                    "/k",
+                    "${workspaceFolder}\\activate_project.bat"
+                ]
+            }
+        },
+        "terminal.integrated.profiles.linux": {
+            "Bash (Activate Virtual Env)": {
+                "path": "/bin/bash",
+                "args": [
+                    "--rcfile",
+                    "/mnt/data/activate_project.sh"
+                ]
+            }
+        },
+        "terminal.integrated.profiles.osx": {
+            "Zsh (Activate Virtual Env)": {
+                "path": "/bin/zsh",
+                "args": [
+                    "--rcfile",
+                    "/mnt/data/activate_project.sh"
+                ]
+            }
+        },
+        "terminal.integrated.defaultProfile.windows": "PowerShell (Activate Virtual Env)",
+        "terminal.integrated.defaultProfile.linux": "Bash (Activate Virtual Env)",
+        "terminal.integrated.defaultProfile.osx": "Zsh (Activate Virtual Env)"
+    }
+}
