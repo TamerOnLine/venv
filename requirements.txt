@@ -1,1 +1,5 @@
 pytest
+python-dotenv
+requests
+langchain-community
+langchain-ollama
