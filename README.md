@@ -1,10 +1,11 @@
+
 # venv
 
 ## Overview
 `venv` is an automated virtual environment setup tool designed to streamline development across Windows, Linux, and macOS. It ensures dependencies are managed efficiently and integrates seamlessly with VS Code.
 
 ## 🖼 Screenshots
-![Agent Witter - Weather API](img/screenshot.png)
+![Virtual environment activation](img/screenshot.png)
 
 ## Features
 - **Cross-platform compatibility**: Supports Windows (`.bat`, `.ps1`), Linux (`.sh`), and macOS.
@@ -79,14 +80,21 @@ pip install -r requirements.txt
 ## File Structure
 ```
 venv/
-├── README.md                # Documentation
+├── .github/                 # GitHub workflows and CI/CD
+├── .pytest_cache/           # Pytest cache for test runs
+├── img/                     # Image assets (if applicable)
+├── src/                     # Source code
+├── tests/                   # Test scripts
+├── venv/                    # Virtual environment folder
+├── .env                     # Environment variables
+├── .gitignore               # Git ignore rules
 ├── activate_project.bat     # Windows CMD script
 ├── activate_project.ps1     # Windows PowerShell script
 ├── activate_project.sh      # Linux/macOS Bash script
+├── LICENSE                  # License file
+├── README.md                # Documentation
 ├── requirements.txt         # List of dependencies
-├── src/                     # Source code
-├── tests/                   # Test scripts
-├── .github/workflows/       # CI/CD setup
+├── runtime.txt              # Python runtime version
 └── workspace.code-workspace # VS Code workspace file
 ```
 
